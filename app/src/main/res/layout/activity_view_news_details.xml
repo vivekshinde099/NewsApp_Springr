@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ViewNewsDetails">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/newsImage"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/newslogo"/>
+
+    <Button
+        android:id="@+id/saveImage"
+        android:layout_width="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Save Image" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Description" />
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="3"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:id="@+id/name"
+            android:maxLines="2"
+            android:layout_marginLeft="5dp"
+            android:hint="author" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/image"
+            android:src="@drawable/ic_baseline_share_24"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:id="@+id/category"
+            android:layout_marginRight="5dp"
+            android:textAlignment="viewEnd"
+            android:hint="Category" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/desc1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+
+</LinearLayout>
